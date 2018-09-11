@@ -46,8 +46,8 @@ class Student
     end
   end
 
-  def self.create
-    
+  def self.create(row)
+
   end
 
   def update
