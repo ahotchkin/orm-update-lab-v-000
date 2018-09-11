@@ -64,7 +64,9 @@ class Student
       LIMIT 1
     SQL
 
-    DB[:conn].execute(sql, name)
+    DB[:conn].execute(sql).map do |row|
+      row[1]
+    end.first
   end
 
   def update
